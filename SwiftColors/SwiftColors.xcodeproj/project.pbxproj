@@ -10,6 +10,7 @@
 		EF3DF09C1B4F6FBA005DCFDC /* SwiftColors.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3DF09B1B4F6FBA005DCFDC /* SwiftColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF3DF0A21B4F6FBA005DCFDC /* SwiftColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3DF0961B4F6FBA005DCFDC /* SwiftColors.framework */; };
 		EF3DF0A91B4F6FBA005DCFDC /* SwiftColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DF0A81B4F6FBA005DCFDC /* SwiftColorsTests.swift */; };
+		EF3DF0B31B4F72AD005DCFDC /* SwiftColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DF0B21B4F72AD005DCFDC /* SwiftColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		EF3DF0A11B4F6FBA005DCFDC /* SwiftColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3DF0A71B4F6FBA005DCFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF3DF0A81B4F6FBA005DCFDC /* SwiftColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftColorsTests.swift; sourceTree = "<group>"; };
+		EF3DF0B21B4F72AD005DCFDC /* SwiftColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				EF3DF09B1B4F6FBA005DCFDC /* SwiftColors.h */,
 				EF3DF0991B4F6FBA005DCFDC /* Supporting Files */,
+				EF3DF0B21B4F72AD005DCFDC /* SwiftColors.swift */,
 			);
 			path = SwiftColors;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3DF0B31B4F72AD005DCFDC /* SwiftColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,27 +327,32 @@
 		EF3DF0AD1B4F6FBA005DCFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftColors/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EF3DF0AE1B4F6FBA005DCFDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftColors/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
