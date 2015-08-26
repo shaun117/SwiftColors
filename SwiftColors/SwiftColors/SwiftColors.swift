@@ -9,6 +9,7 @@
 import Foundation
 
 public var SwiftColor = SwiftColors()
+var jjh = SwiftColor.acid_green
 
 public class SwiftColors{
     
